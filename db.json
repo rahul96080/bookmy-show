@@ -1,0 +1,67 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "movie_name": "Thor",
+            "banner_image_url": "1.jpg",
+            "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+            "languages": "Hindi, English, Tamil, Telgu",
+            "release_date": "10 Feb, 2023",
+            "movie_duration": "2h 32m",
+            "movie_genre": [{
+                "genre": "Action"
+               }]
+        },
+        {
+            "id": 2,
+            "movie_name": "Brahmastra",
+            "banner_image_url": "1.jpg",
+            "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+            "languages": "Hindi, English, Tamil, Telgu",
+            "release_date": "10 Feb, 2023",
+            "movie_duration": "2h 32m",
+            "movie_genre": [{
+                "genre": "Action"
+               },
+               {
+                "genre": "Adventure"
+               },
+               {
+                "genre": "Fantasy"
+                }]
+        },
+        {
+            "id": 3,
+            "movie_name": "The Kashmir Files",
+            "banner_image_url": "1.jpg",
+            "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+            "languages": "Hindi, English, Tamil, Telgu",
+            "release_date": "10 Feb, 2023",
+            "movie_duration": "2h 32m",
+            "movie_genre": [{
+                "genre": "Action"
+               },
+               {
+                "genre": "Darma"
+               },
+               {
+                "genre": "Thiller"
+                }]
+        },
+        {
+            "id": 4,
+            "movie_name": "Bhool Bhulaiyaa 2",
+            "banner_image_url": "1.jpg",
+            "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+            "languages": "Hindi, English, Tamil, Telgu",
+            "release_date": "10 Feb, 2023",
+            "movie_genre": [{
+                "genre": "Action"
+               },
+               {
+                "genre": "Adventure"
+               }
+               ]
+        }
+    ]
+}
