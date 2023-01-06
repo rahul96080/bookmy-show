@@ -97,7 +97,7 @@ export const CinemasBody = ({ filters }) => {
 
     return seatingModalOpen ? <Seating handleCloseSeatingButton={handleCloseSeatingButton} seatingActive={seatingModalOpen} handleCloseSeatingModal={handleCloseSeatingModal} /> : (
         <div className={styles.container} >
-            <SummaryPage foodModalOpen={foodModalOpen} handleCloseFoodModal={handleCloseFoodModal} />
+            {/* <SummaryPage foodModalOpen={foodModalOpen} handleCloseFoodModal={handleCloseFoodModal} /> */}
             <Modal
                 title="Terms & Conditions"
                 visible={visible}
@@ -139,7 +139,7 @@ export const CinemasBody = ({ filters }) => {
             <div style={{ padding: "15px" }}>
                 {
                     filteredData?.map(cinema => (
-                        <div key={cinema._id} className={styles.container__card}>
+                        <div key={cinema.id} className={styles.container__card}>
                             <div className={styles.container__card__title}>
                                 <BsHeartFill className={styles.container__card__title__icon} />
                                 <h4>{cinema.name}</h4>

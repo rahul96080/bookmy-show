@@ -15,8 +15,8 @@ const Seating = ({
   timeAndDate = "Tomorrow, 12 Mar, 10:30 AM",
   type1 = "SILVER",
   type2 = "Premium",
-  ticketPrice1 = 112,
-  ticketPrice2 = 100,
+  ticketPrice1 = 250,
+  ticketPrice2 = 150,
   ticketListfunc,
   handleCloseSeatingModal,
   handleCloseSeatingButton
@@ -162,7 +162,7 @@ const Seating = ({
           </div>
 
           <div className="Screen">
-            <img src="https://i.imgur.com/XhsTL5Y.png" alt="screen" />
+            <img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/screen-icon.8dd7f126.svg" alt="screen" />
           </div>
         </div>
       </div>

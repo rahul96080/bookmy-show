@@ -43,13 +43,17 @@ const MoviePage = () => {
   const [open, setOpen] = React.useState(false);
   const classes = useStyles();
   const { id } = useParams();
-  const data = useSelector((state) => state.data.movies.data);
+  //const data = useSelector((state) => state.data.movies.data);
   const dispatch = useDispatch();
   const history = useHistory();
   const [action, setAction] = React.useState(false);
   const isAuth = useSelector(state => state.app.isAuth)
-
   const [auth, setAuth] = React.useState(false);
+
+  const movies_data = useSelector(state => state.app.movies_data); 
+  const data = movies_data.find(obj => obj.id === parseInt(id));
+
+
   React.useEffect(() => {
     dispatch(getMovies(id));
     window.scrollTo(window.scrollX, 0);
@@ -89,11 +93,11 @@ console.log("Auth :"  + isAuth)
   }
 
   const handleCloseLogin = (number) => {
-    if (+number === 7275584516) {
+    if (+number === 8125303614) {
         setAuth(true)
         alert("Successfully Logged in")
     }
-    else if (+number === 123456789) {
+    else if (+number === 8125303614) {
         setAuth(true)
         alert("Successfully Logged in")
     }else if (+number === "") {
@@ -123,7 +127,7 @@ console.log("Auth :"  + isAuth)
           >
             <Login action={action} handleCloseLogin={handleCloseLogin} />
             <div className="container__card">
-              <img src={data.banner_image_url} alt="title" />
+              <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTM1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png" alt="title" />
             </div>
             <div className="container__movieDetail">
               <h1>{data.movie_name}</h1>
@@ -133,8 +137,8 @@ console.log("Auth :"  + isAuth)
                   alt="Rating"
                   style={{ width: 25 }}
                 />
-                {/* <h1>{data.rating.percentage}%</h1>
-                <p style={{ marginBottom: 0 }}>{Math.ceil(data.rating.no_of_ratings)} Ratings</p> */}
+                <h1>{data.rating.percentage}%</h1>
+                <p style={{ marginBottom: 0 }}>{Math.ceil(data.rating.no_of_ratings)} Ratings</p>
               </div>
               <div className="container__movieDetail_ratingButton">
                 <div>
@@ -170,8 +174,8 @@ console.log("Auth :"  + isAuth)
               <h1>About the movie</h1>
               <p>{data.about_movie}</p>
             </div>
-            <hr />
-            {/* <div>
+            {/* <hr />
+            <div>
               <h1>Cast</h1>
               <Carousel itemsToShow={8} pagination={false}>
                 {data.cast.map((e) => (
@@ -190,9 +194,9 @@ console.log("Auth :"  + isAuth)
                   </div>
                 ))}
               </Carousel>
-            </div> */}
+            </div>
             <hr />
-            {/* <div className="carousel">
+            <div className="carousel">
               <h1>Crew</h1>
               <Carousel itemsToShow={8} pagination={false}>
                 {data.crew.map((e) => (

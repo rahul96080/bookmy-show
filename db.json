@@ -7,10 +7,16 @@
             "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
             "languages": "Hindi, English, Tamil, Telgu",
             "release_date": "10 Feb, 2023",
-            "movie_duration": "2h 32m",
-            "movie_genre": [{
-                "genre": "Action"
-               }]
+            "movie_duration": "2h 31m",
+            "movie_genre": [
+                {
+                    "genre": "Action"
+                }
+            ],
+            "rating": {
+                "percentage": 70,
+                "no_of_ratings": 5
+            }
         },
         {
             "id": 2,
@@ -19,16 +25,22 @@
             "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
             "languages": "Hindi, English, Tamil, Telgu",
             "release_date": "10 Feb, 2023",
-            "movie_duration": "2h 32m",
-            "movie_genre": [{
-                "genre": "Action"
-               },
-               {
-                "genre": "Adventure"
-               },
-               {
-                "genre": "Fantasy"
-                }]
+            "movie_duration": "2h 50m",
+            "movie_genre": [
+                {
+                    "genre": "Action"
+                },
+                {
+                    "genre": "Adventure"
+                },
+                {
+                    "genre": "Fantasy"
+                }
+            ],
+            "rating": {
+                "percentage": 60,
+                "no_of_ratings": 4
+            }
         },
         {
             "id": 3,
@@ -37,16 +49,22 @@
             "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
             "languages": "Hindi, English, Tamil, Telgu",
             "release_date": "10 Feb, 2023",
-            "movie_duration": "2h 32m",
-            "movie_genre": [{
-                "genre": "Action"
-               },
-               {
-                "genre": "Darma"
-               },
-               {
-                "genre": "Thiller"
-                }]
+            "movie_duration": "2h 44m",
+            "movie_genre": [
+                {
+                    "genre": "Action"
+                },
+                {
+                    "genre": "Darma"
+                },
+                {
+                    "genre": "Thiller"
+                }
+            ],
+            "rating": {
+                "percentage": 80,
+                "no_of_ratings": 6
+            }
         },
         {
             "id": 4,
@@ -55,13 +73,66 @@
             "about_movie": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
             "languages": "Hindi, English, Tamil, Telgu",
             "release_date": "10 Feb, 2023",
-            "movie_genre": [{
-                "genre": "Action"
-               },
-               {
-                "genre": "Adventure"
-               }
-               ]
+            "movie_duration": "2h 23m",
+            "movie_genre": [
+                {
+                    "genre": "Action"
+                },
+                {
+                    "genre": "Adventure"
+                }
+            ],
+            "rating": {
+                "percentage": 78,
+                "no_of_ratings": 7
+            }
+        }
+    ],
+    "cinemas": [
+        {
+            "id": 101,
+            "name": "APR Cinemas",
+            "timings": [
+                {
+                    "time": "01:30 PM"
+                },
+                {
+                    "time": "06:30 PM"
+                },
+                {
+                    "time": "09:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "name": "PVR Inorbit",
+            "timings": [
+                {
+                    "time": "12:30 PM"
+                },
+                {
+                    "time": "02:30 PM"
+                },
+                {
+                    "time": "6:30 PM"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "name": "INOX: Nehru Place",
+            "timings": [
+                {
+                    "time": "10:30 AM"
+                },
+                {
+                    "time": "06:30 PM"
+                },
+                {
+                    "time": "09:30 PM"
+                }
+            ]
         }
     ]
 }

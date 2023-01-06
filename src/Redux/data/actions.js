@@ -1,28 +1,21 @@
-//import * as actionType from "./actionTypes";
-
-import {
-  GET_MOVIE_REQUEST,
-  GET_MOVIE_SUCCESS,
-  GET_MOVIE_FAILURE
-} from "./actionTypes"
-
+import * as actionType from "./actionTypes";
 import axios from "axios";
 const getMovieRequest = () => {
   return {
-    type: GET_MOVIE_REQUEST,
+    type: actionType.GET_MOVIE_REQUEST,
   };
 };
 
 const getMovieSuccess = (payload) => {
   return {
-    type: GET_MOVIE_SUCCESS,
+    type: actionType.GET_MOVIE_SUCCESS,
     payload,
   };
 };
 
 const getMovieFailure = (error) => {
   return {
-    type: GET_MOVIE_FAILURE,
+    type: actionType.GET_MOVIE_FAILURE,
     payload: {
       error: error,
     },

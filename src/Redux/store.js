@@ -1,4 +1,4 @@
-import { applyMiddleware, combineReducers, compose, createStore } from "redux";
+import { applyMiddleware, combineReducers, compose, legacy_createStore as createStore } from "redux";
 import { reducer } from "./app/reducer";
 import { movieReducer } from "./data/reducer";
 import { cinemasReducer } from "./cinemas/cinemasReducer";

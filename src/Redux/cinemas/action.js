@@ -27,7 +27,15 @@ const getCinemasFailure = () => {
 
 export const getCinemas = () => dispatch => {
     dispatch(getCinemasRequest());
-    return axios.get("https://bookmyshow-clone-masai.herokuapp.com/cinema")
-        .then(res => dispatch(getCinemasSuccess(res.data.data)))
-        .catch(error => dispatch(getCinemasFailure(error)))
+    // return axios.get("https://bookmyshow-clone-masai.herokuapp.com/cinema")
+    //     .then(res => dispatch(getCinemasSuccess(res.data.data)))
+    //     .catch(error => dispatch(getCinemasFailure(error)))
+
+        return fetch('http://localhost:5000/cinemas')
+        .then((res) => res.json())
+        .then((res) => {
+            dispatch(getCinemasSuccess(res))
+            console.log(res);
+        })
+        .catch(error => dispatch(getCinemasFailure(error)));
 }

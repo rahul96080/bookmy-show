@@ -5,13 +5,19 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import styles from "../Styling/Cinemas.module.css";
 import { handleAddMovieName } from "../../Redux/booking_details/actions";
+import { useHistory, useParams } from "react-router-dom";
 
 export const Header = () => {
 
-    const movie = useSelector(state => state.data.movies).data;
+    //const movie = useSelector(state => state.data.movies).data;
     const isLoading = useSelector(state => state.data.isLoading);
     const isError = useSelector(state => state.data.isError);
     const dispatch = useDispatch();
+    const { id } = useParams();
+debugger;
+    const movies_data = useSelector(state => state.app.movies_data); 
+  
+    const movie = movies_data.find(obj => obj.id === parseInt(id));
 
     useEffect(() => {
         if (movie) {
@@ -44,7 +50,9 @@ export const Header = () => {
             <div className={styles.header_container__info}>
                 <h1>{movie.movie_name}</h1>
                 <div>
-                    <div className={styles.header_container__info__grade}> {movie.movie_grade}</div>
+                    <div className={styles.header_container__info__grade}>
+                         {/* {movie.movie_grade} */} UA
+                         </div>
                     <div className={styles.header_container__info__rating}>
                         <div>  <BsHeartFill style={{ color: "red", marginRight: 5 }} /> <span> {movie.rating.percentage}%  </span> </div>
                         <span> {movie.rating.no_of_ratings}k VOTES</span>
@@ -65,7 +73,7 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.header__container__crew}>
+            {/* <div className={styles.header__container__crew}>
                 <h4>Cast & Crew</h4>
                 <Carousel responsive={responsive} removeArrowOnDeviceType={["mobile"]}>
                     {
@@ -77,7 +85,7 @@ export const Header = () => {
                         ))
                     }
                 </Carousel>
-            </div>
+            </div> */}
         </div>
     )
 }

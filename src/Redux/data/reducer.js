@@ -6,10 +6,8 @@ const initState = {
   isLoading: false,
 };
 
-//export const movieReducer = (state = initState, action) => {
-export const movieReducer = (state = initState, { type, payload }) => {
-  debugger;
-  switch (type) {
+export const movieReducer = (state = initState, action) => {
+  switch (action.type) {
     case actionType.GET_MOVIE_REQUEST:
       return {
         ...state,
@@ -18,7 +16,7 @@ export const movieReducer = (state = initState, { type, payload }) => {
     case actionType.GET_MOVIE_SUCCESS:
       return {
         ...state,
-        movies: payload,
+        movies: action.payload,
         isLoading: false,
       };
     case actionType.GET_MOVIE_FAILURE:
