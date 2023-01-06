@@ -97,10 +97,10 @@ export const CinemasBody = ({ filters }) => {
 
     return seatingModalOpen ? <Seating handleCloseSeatingButton={handleCloseSeatingButton} seatingActive={seatingModalOpen} handleCloseSeatingModal={handleCloseSeatingModal} /> : (
         <div className={styles.container} >
-            {/* <SummaryPage foodModalOpen={foodModalOpen} handleCloseFoodModal={handleCloseFoodModal} /> */}
+            <SummaryPage foodModalOpen={foodModalOpen} handleCloseFoodModal={handleCloseFoodModal} />
             <Modal
                 title="Terms & Conditions"
-                visible={visible}
+                open={visible}
                 confirmLoading={confirmLoading}
                 onCancel={handleCancel}
                 footer={[
@@ -174,7 +174,7 @@ export const CinemasBody = ({ filters }) => {
                                                                 <span style={{ color: "#4abd5d" }}>Available</span>
                                                             </div>
                                                             <div>
-                                                                <p>Rs. 200</p>
+                                                                <p>Rs. 250</p>
                                                                 <span>CLASSIC</span> <br />
                                                                 <span style={{ color: "#4abd5d" }}>Available</span>
                                                             </div>

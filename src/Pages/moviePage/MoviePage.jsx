@@ -50,7 +50,7 @@ const MoviePage = () => {
   const isAuth = useSelector(state => state.app.isAuth)
   const [auth, setAuth] = React.useState(false);
 
-  const movies_data = useSelector(state => state.app.movies_data); 
+  const movies_data = useSelector(state => state.app.movies_data);
   const data = movies_data.find(obj => obj.id === parseInt(id));
 
 
@@ -62,8 +62,8 @@ const MoviePage = () => {
     setOpen(true);
   };
 
-console.log("Movie Page :" + data);
-console.log("Auth :"  + isAuth)
+  console.log("Movie Page :" + data);
+  console.log("Auth :" + isAuth)
   const handleClose = () => {
     setOpen(false);
   };
@@ -85,7 +85,7 @@ console.log("Auth :"  + isAuth)
   const handleClick = () => {
     if (isAuth) {
       history.push(`/booktickets/${id}`)
-      
+
     } else {
       alert("Please login to book your tickets")
       setAction(true)
@@ -94,23 +94,23 @@ console.log("Auth :"  + isAuth)
 
   const handleCloseLogin = (number) => {
     if (+number === 8125303614) {
-        setAuth(true)
-        alert("Successfully Logged in")
+      setAuth(true)
+      alert("Successfully Logged in")
     }
     else if (+number === 8125303614) {
-        setAuth(true)
-        alert("Successfully Logged in")
-    }else if (+number === "") {
-        alert("Please type your number")
-        handleCloseLogin(number)
+      setAuth(true)
+      alert("Successfully Logged in")
+    } else if (+number === "") {
+      alert("Please type your number")
+      handleCloseLogin(number)
     }
     else {
-        alert("You are not registered")
+      alert("You are not registered")
     }
     setAction(false);
   }
-    React.useEffect(() => {
-      dispatch(storeAuth(auth))
+  React.useEffect(() => {
+    dispatch(storeAuth(auth))
   }, [auth])
   return (
     <div>
@@ -127,7 +127,7 @@ console.log("Auth :"  + isAuth)
           >
             <Login action={action} handleCloseLogin={handleCloseLogin} />
             <div className="container__card">
-              <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTM1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png" alt="title" />
+              <img src={data.banner_image_url} alt={data.movie_name} />
             </div>
             <div className="container__movieDetail">
               <h1>{data.movie_name}</h1>
@@ -305,7 +305,7 @@ console.log("Auth :"  + isAuth)
           </Fade>
         </Modal>
       </div>
-      <RecommendedMovies></RecommendedMovies>
+      {/* <RecommendedMovies></RecommendedMovies> */}
     </div>
   );
 };

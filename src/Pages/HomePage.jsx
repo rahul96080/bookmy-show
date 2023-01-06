@@ -26,14 +26,7 @@ export const HomePage = () => {
         <div style={{ backgroundColor: "#F2F5F9" }}>
             <AddCarousel />
             <RecommendedMovies />
-            <Entertainment />
-            <PremierMovies />
-            <OutdoorEvents />
-            <div style={{ backgroundColor: "#F2F2F2" }}>
-                <LaughterEvents />
-                <PopularEvents />
-                <LatestEvents />
-            </div>
+            <Entertainment />                
         </div>
     )
 }

@@ -36,7 +36,7 @@ const FirstSection = ({ handlePayment }) => {
                         <div className={styles.sampleCard}>
                             <div style={{fontSize:'13px', color:'gray'}}>Card Number</div>
                             <input type="text" placeholder="Enter Your Card Number" value="4568 6749 7864 6543"/>
-                            <input type="text" placeholder="Name on the card" value="Veer Bahadur Shastri" />
+                            <input type="text" placeholder="Name on the card" value="Rahul Kumar" />
                             
                             <div className={styles.otherDetails}>
                             <div>

@@ -376,38 +376,8 @@ const Navbar = () => {
           <Link className={styles.link} to="">
             Movies
           </Link>
-          <Link className={styles.link} to="">
-            Stream
-          </Link>
-          <Link className={styles.link} to="">
-            Events
-          </Link>
-          <Link className={styles.link} to="">
-            Plays
-          </Link>
-          <Link className={styles.link} to="">
-            Sports
-          </Link>
-          <Link className={styles.link} to="">
-            Activities
-          </Link>
-          <Link className={styles.link} to="">
-            Fanhood
-          </Link>
-          <Link className={styles.link} to="">
-            Buzz
-          </Link>
         </div>
         <div>
-          <Link className={styles.link} to="">
-            Listyourshow
-          </Link>
-          <Link className={styles.link} to="">
-            Corporates
-          </Link>
-          <Link className={styles.link} to="">
-            Offers
-          </Link>
           <Link className={styles.link} to="">
             Gift Cards
           </Link>
