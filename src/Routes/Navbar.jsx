@@ -33,6 +33,7 @@ const useStyles = makeStyles({
     width: "auto",
   },
 });
+
 const location = [
   {
     link: "https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png",
@@ -87,6 +88,7 @@ const Navbar = () => {
   const [auth, setAuth] = React.useState(false);
   const [action, setAction] = React.useState(false);
   const isAuth = useSelector((state) => state.app.isAuth);
+  
   const handleClickOpen = () => {
     setOpen(true);
   };
