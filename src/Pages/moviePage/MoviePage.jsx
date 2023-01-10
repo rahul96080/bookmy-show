@@ -57,6 +57,8 @@ const MoviePage = () => {
   React.useEffect(() => {
     dispatch(getMovies(id));
     window.scrollTo(window.scrollX, 0);
+    setAuth(isAuth);
+    dispatch(storeAuth(auth))
   }, []);
   const handleOpen = () => {
     setOpen(true);
@@ -73,10 +75,17 @@ const MoviePage = () => {
   const handleRating = () => {
     dispatch(
       putMovies(id, {
+        movie_name: data.movie_name,
+        banner_image_url: data.banner_image_url,
+        about_movie: data.about_movie,
+        languages: data.languages,
+        release_date: data.release_date,
+        movie_duration: data.movie_duration,
+        movie_genre: data.movie_genre,
         rating: {
-          percentage: data.rating.percentage,
+          percentage: rValue,
           no_of_ratings: data.rating.no_of_ratings + 1,
-        },
+        }
       })
     );
     setOpen(false);

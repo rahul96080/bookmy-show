@@ -33,7 +33,10 @@ const Footer = () => {
             </div>         
             <div className={styles.part4}>
                 <div></div>
-                <img src="bookmyshow-logo.png" alt="" />
+                <img 
+                 src="http://localhost:3000/bookmymovie-logo.png"
+                // src="bookmymovie-logo.png" alt=""
+                 />
                 <div></div>
             </div>
 
@@ -47,8 +50,8 @@ const Footer = () => {
             </div>
 
             <div className={styles.part6}>
-                <div>Copyright 2021
-                     © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.</div>
+                <div>Copyright 2023
+                     © Book My Movie All Rights Reserved.</div>
                 <div>The content and images used on
                 this site are copyright protected and copyrights vests with the respective owners. The usage of the content and
                     images on this website is intended to promote the works and no endorsement of the artist shall be implied.</div>

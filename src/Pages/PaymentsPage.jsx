@@ -71,9 +71,6 @@ export default function FullScreenDialog({ proceed }) {
   const handleClose = () => {
     setState(false);
   };
-  const handleChange = (e) => {
-
-  }
 
   const handlePayment = () => {
     setState(true)
@@ -91,6 +88,7 @@ export default function FullScreenDialog({ proceed }) {
   const history = useHistory();
   const handleMove = () => {
     history.push("/")
+    //history.push(`/profile/booking-history`)
   }
 
   console.log(state)
@@ -102,7 +100,10 @@ export default function FullScreenDialog({ proceed }) {
           <Toolbar>
             <Typography variant="h6" className={classes.title}>
               <svg height="40" width="150">
-                <Link to="/" ><image href="//in.bmscdn.com/webin/common/icons/bms.svg" width="150" height="40"></image></Link>
+                <Link to="/" ><image 
+                // href="//in.bmscdn.com/webin/common/icons/bms.svg"
+                href="http://localhost:3000/bookmymovie-logo.png"
+                 width="150" height="40"></image></Link>
               </svg>
             </Typography>
           </Toolbar>
