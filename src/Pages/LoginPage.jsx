@@ -53,8 +53,6 @@ const DialogActions = withStyles((theme) => ({
 export default function Login({ action, handleCloseLogin }) {
   const [number, setNumber] = React.useState('')
 
-
-
   return (
     <div>
       <Dialog onClose={handleCloseLogin} aria-labelledby="customized-dialog-title" open={action}>
