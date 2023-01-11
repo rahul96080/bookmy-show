@@ -1,186 +1,186 @@
 {
-    "movies": [
+  "movies": [
+    {
+      "movie_name": "Avatar: The way of water",
+      "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Drive---705x750-f62d7d60-76e8-11ed-b73d-dd421bb210f9.jpg",
+      "about_movie": "The Way of Water is a 2022 American epic science fiction film directed and produced by James Cameron, who co-edited the film and co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno.",
+      "languages": "Hindi, English, Tamil, Telugu, Malayalam, Kannada",
+      "release_date": "06 Jan, 2023",
+      "movie_duration": "3h 15m",
+      "movie_genre": [
         {
-            "id": 1,
-            "movie_name": "Avatar: The way of water",
-            "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Drive---705x750-f62d7d60-76e8-11ed-b73d-dd421bb210f9.jpg",
-            "about_movie": "The Way of Water is a 2022 American epic science fiction film directed and produced by James Cameron, who co-edited the film and co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno.",
-            "languages": "Hindi, English, Tamil, Telugu, Malayalam, Kannada",
-            "release_date": "06 Jan, 2023",
-            "movie_duration": "3h 15m",
-            "movie_genre": [
-                {
-                    "genre": "Action"
-                },
-                {
-                    "genre": "Fantasy"
-                }
-            ],
-            "rating": {
-                "percentage": 92,
-                "no_of_ratings": 5
-            }
+          "genre": "Action"
         },
         {
-            "id": 2,
-            "movie_name": "Drishyam 2",
-            "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Drishyam-2-705x750-b1d00250-65c7-11ed-a645-812143556bbd.jpg",
-            "about_movie": "Coincidentally, Murad, having learnt of Vijay's arrest, pays a visit to Tarun, Meera, and Mahesh. He reveals that during one of his business collisions with Vijay, the latter had fabricated a script for a future crime thriller, loosely based on Sam's murder.",
-            "languages": "Hindi",
-            "release_date": "25 Dec, 2022",
-            "movie_duration": "2h 25m",
-            "movie_genre": [
-                {
-                    "genre": "Crime"
-                },
-                {
-                    "genre": "Mystery"
-                },
-                {
-                    "genre": "Thiller"
-                }
-            ],
-            "rating": {
-                "percentage": 95,
-                "no_of_ratings": 4
-            }
-        },
-        {
-            "id": 3,
-            "movie_name": "Cirkus",
-            "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Circus705x750-017b6e40-7b06-11ed-9459-3d8116f03fee.jpg",
-            "about_movie": "Cirkus is a 2022 Indian Hindi-language period comedy film directed and produced by Rohit Shetty. The film is jointly produced by Rohit Shetty Production",
-            "languages": "Hindi, Telgu",
-            "release_date": "12 Jan, 2023",
-            "movie_duration": "2h 44m",
-            "movie_genre": [
-                {
-                    "genre": "Comedy"
-                },
-                {
-                    "genre": "Darma"
-                }
-            ],
-            "rating": {
-                "percentage": 60,
-                "no_of_ratings": 6
-            }
-        },
-        {
-            "id": 4,
-            "movie_name": "Uunchai",
-            "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/UUNCHAI-705x750-1c6f1310-625f-11ed-b1a1-23b16593ce17.jpg",
-            "about_movie": "Uunchai ( transl. Height) is a 2022 Indian Hindi-language adventure drama film directed by Sooraj Barjatya, written by Abhishek Dixit on the basis of an original story by Sunil Gandhi, and produced jointly by Rajshri Productions, Boundless Media and Mahaveer Jain Films",
-            "languages": "Hindi, English",
-            "release_date": "10 Dec, 2022",
-            "movie_duration": "2h 15m",
-            "movie_genre": [
-                {
-                    "genre": "Drama"
-                },
-                {
-                    "genre": "Adventure"
-                },
-                {
-                    "genre": "Family"
-                }
-            ],
-            "rating": {
-                "percentage": 85,
-                "no_of_ratings": 7
-            }
-        },
-        {
-            "id": 5,
-            "movie_name": "The Y",
-            "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/The-Y705x750-978dc8a0-8aa2-11ed-9b16-5b1b1e9f8842.jpg",
-            "about_movie": "The Female Protagonist is a Mute. After her marriage the couple enters a new chapter of their life but face another dilemma which they least expect",
-            "languages": "Hindi, English, Telugu",
-            "release_date": "06 Jan, 2023",
-            "movie_duration": "1h 50m",
-            "movie_genre": [
-                {
-                    "genre": "Drama"
-                },
-                {
-                    "genre": "Adventure"
-                },
-                {
-                    "genre": "Family"
-                }
-            ],
-            "rating": {
-                "percentage": 70,
-                "no_of_ratings": 6
-            }
-        },
-        {
-            "id": 6,
-            "movie_name": "Anokhi",
-            "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Anokhi--705x750-7d88d400-82a4-11ed-9a8d-9b91ffeaf739.jpg",
-            "about_movie": "Anokhi is an upcoming Hindi movie. The movie is directed by Sanjay Kumar Sinha and will feature Rahul Roy, Kalpana Shah, Zarina Wahab and Raju Kher as lead characters.",
-            "languages": "Hindi",
-            "release_date": "23 Dec, 2022",
-            "movie_duration": "2h 29m",
-            "movie_genre": [
-                {
-                    "genre": "Drama"
-                },
-                {
-                    "genre": "Family"
-                }
-            ],
-            "rating": {
-                "percentage": 75,
-                "no_of_ratings": 6
-            }
+          "genre": "Fantasy"
         }
-    ],
-    "cinemas": [
+      ],
+      "rating": {
+        "percentage": 90,
+        "no_of_ratings": 10
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "movie_name": "Drishyam 2",
+      "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Drishyam-2-705x750-b1d00250-65c7-11ed-a645-812143556bbd.jpg",
+      "about_movie": "Coincidentally, Murad, having learnt of Vijay's arrest, pays a visit to Tarun, Meera, and Mahesh. He reveals that during one of his business collisions with Vijay, the latter had fabricated a script for a future crime thriller, loosely based on Sam's murder.",
+      "languages": "Hindi",
+      "release_date": "25 Dec, 2022",
+      "movie_duration": "2h 25m",
+      "movie_genre": [
         {
-            "id": 101,
-            "name": "APR Cinemas",
-            "timings": [
-                {
-                    "time": "01:30 PM"
-                },
-                {
-                    "time": "06:30 PM"
-                },
-                {
-                    "time": "09:00 PM"
-                }
-            ]
+          "genre": "Crime"
         },
         {
-            "id": 102,
-            "name": "PVR Inorbit",
-            "timings": [
-                {
-                    "time": "12:30 PM"
-                },
-                {
-                    "time": "02:30 PM"
-                },
-                {
-                    "time": "6:30 PM"
-                }
-            ]
+          "genre": "Mystery"
         },
         {
-            "id": 103,
-            "name": "INOX: Nehru Place",
-            "timings": [
-                {
-                    "time": "12:15 PM"
-                },
-                {
-                    "time": "06:30 PM"
-                },
-                {
-                    "time": "09:30 PM"
-                }
-            ]
+          "genre": "Thiller"
         }
-    ]
+      ],
+      "rating": {
+        "percentage": 95,
+        "no_of_ratings": 4
+      }
+    },
+    {
+      "id": 3,
+      "movie_name": "Cirkus",
+      "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Circus705x750-017b6e40-7b06-11ed-9459-3d8116f03fee.jpg",
+      "about_movie": "Cirkus is a 2022 Indian Hindi-language period comedy film directed and produced by Rohit Shetty. The film is jointly produced by Rohit Shetty Production",
+      "languages": "Hindi, Telgu",
+      "release_date": "12 Jan, 2023",
+      "movie_duration": "2h 44m",
+      "movie_genre": [
+        {
+          "genre": "Comedy"
+        },
+        {
+          "genre": "Darma"
+        }
+      ],
+      "rating": {
+        "percentage": 60,
+        "no_of_ratings": 6
+      }
+    },
+    {
+      "id": 4,
+      "movie_name": "Uunchai",
+      "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/UUNCHAI-705x750-1c6f1310-625f-11ed-b1a1-23b16593ce17.jpg",
+      "about_movie": "Uunchai ( transl. Height) is a 2022 Indian Hindi-language adventure drama film directed by Sooraj Barjatya, written by Abhishek Dixit on the basis of an original story by Sunil Gandhi, and produced jointly by Rajshri Productions, Boundless Media and Mahaveer Jain Films",
+      "languages": "Hindi, English",
+      "release_date": "10 Dec, 2022",
+      "movie_duration": "2h 15m",
+      "movie_genre": [
+        {
+          "genre": "Drama"
+        },
+        {
+          "genre": "Adventure"
+        },
+        {
+          "genre": "Family"
+        }
+      ],
+      "rating": {
+        "percentage": 85,
+        "no_of_ratings": 7
+      }
+    },
+    {
+      "id": 5,
+      "movie_name": "The Y",
+      "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/The-Y705x750-978dc8a0-8aa2-11ed-9b16-5b1b1e9f8842.jpg",
+      "about_movie": "The Female Protagonist is a Mute. After her marriage the couple enters a new chapter of their life but face another dilemma which they least expect",
+      "languages": "Hindi, English, Telugu",
+      "release_date": "06 Jan, 2023",
+      "movie_duration": "1h 50m",
+      "movie_genre": [
+        {
+          "genre": "Drama"
+        },
+        {
+          "genre": "Adventure"
+        },
+        {
+          "genre": "Family"
+        }
+      ],
+      "rating": {
+        "percentage": 70,
+        "no_of_ratings": 6
+      }
+    },
+    {
+      "id": 6,
+      "movie_name": "Anokhi",
+      "banner_image_url": "https://assetscdn1.paytm.com/images/cinema/Anokhi--705x750-7d88d400-82a4-11ed-9a8d-9b91ffeaf739.jpg",
+      "about_movie": "Anokhi is an upcoming Hindi movie. The movie is directed by Sanjay Kumar Sinha and will feature Rahul Roy, Kalpana Shah, Zarina Wahab and Raju Kher as lead characters.",
+      "languages": "Hindi",
+      "release_date": "23 Dec, 2022",
+      "movie_duration": "2h 29m",
+      "movie_genre": [
+        {
+          "genre": "Drama"
+        },
+        {
+          "genre": "Family"
+        }
+      ],
+      "rating": {
+        "percentage": 75,
+        "no_of_ratings": 6
+      }
+    }
+  ],
+  "cinemas": [
+    {
+      "id": 101,
+      "name": "APR Cinemas",
+      "timings": [
+        {
+          "time": "01:30 PM"
+        },
+        {
+          "time": "06:30 PM"
+        },
+        {
+          "time": "09:00 PM"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "PVR Inorbit",
+      "timings": [
+        {
+          "time": "12:30 PM"
+        },
+        {
+          "time": "02:30 PM"
+        },
+        {
+          "time": "6:30 PM"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "INOX: Nehru Place",
+      "timings": [
+        {
+          "time": "12:15 PM"
+        },
+        {
+          "time": "06:30 PM"
+        },
+        {
+          "time": "09:30 PM"
+        }
+      ]
+    }
+  ]
 }

@@ -14,7 +14,7 @@ export const Header = () => {
     const isError = useSelector(state => state.data.isError);
     const dispatch = useDispatch();
     const { id } = useParams();
-debugger;
+
     const movies_data = useSelector(state => state.app.movies_data); 
   
     const movie = movies_data.find(obj => obj.id === parseInt(id));
