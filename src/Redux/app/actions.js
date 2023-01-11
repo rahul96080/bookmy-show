@@ -15,7 +15,10 @@ import {
     GET_POPULAR_EVENTS_REQUEST,
     GET_POPULAR_EVENTS_SUCCESS
 } from "./actionTypes"
+
 import axios from "axios";
+
+
 export const cityRequest = (city) => {
     return {
         type: "cityChange",
@@ -164,10 +167,7 @@ export const getLatestEvents = () => dispatch => {
 }
 
 
-
-
 // Auth----------------------------------------
-
 
 export const storeAuth = (auth) => {
    return {type: "LOGIN-AUTH",

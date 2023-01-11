@@ -5,6 +5,7 @@ import { HomePage } from '../Pages/HomePage'
 import SeeAll from "../Pages/SeeAll";
 import { BookTicketsPage } from '../Pages/BookTicketsPage';
 import { BookingHistory } from "../Components/BookingHistory";
+import RegisterPage from "../Pages/RegisterPage";
 
 const Router = () => {
     return (
@@ -12,6 +13,9 @@ const Router = () => {
             <Switch>
                 <Route exact path="/">
                     <HomePage />
+                </Route>
+                <Route exact path="/signup">
+                    <RegisterPage/>
                 </Route>
                 <Route exact path="/ncr/movies">
                     <SeeAll />

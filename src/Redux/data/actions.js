@@ -1,5 +1,6 @@
 import * as actionType from "./actionTypes";
 import axios from "axios";
+
 const getMovieRequest = () => {
   return {
     type: actionType.GET_MOVIE_REQUEST,
