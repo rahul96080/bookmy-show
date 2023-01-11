@@ -1,5 +1,6 @@
 import { applyMiddleware, combineReducers, compose, legacy_createStore as createStore } from "redux";
 import { reducer } from "./app/reducer";
+import reduxThunk from "redux-thunk";
 import { movieReducer } from "./data/reducer";
 import { cinemasReducer } from "./cinemas/cinemasReducer";
 import { bookingReducer } from "./booking_details/bookingReducer";
@@ -24,5 +25,8 @@ const logger = store => (next) => (action) => {
 const composeEnhancers =
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger)));
+// const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger)));
+const store = createStore(rootReducer, 
+    composeEnhancers(applyMiddleware(logger)));
+
 export { store }

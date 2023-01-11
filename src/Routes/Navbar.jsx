@@ -21,6 +21,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { cityRequest, storeAuth } from "../Redux/app/actions";
 import Login from "../Pages/LoginPage";
 
+import firebase from '../Utils/firebase';
+import { auth } from '../Utils/firebase';
+import {SIGNIN_SUCCESS, SIGNIN_ERROR} from "../Redux/app/actionTypes.js"
+import { signInWithEmailAndPassword } from "firebase/auth";
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
@@ -77,6 +82,8 @@ const location = [
   },
 ];
 const Navbar = () => {
+  const dispatch = useDispatch();
+
   const [query, setQuery] = React.useState("");
   const [city, setCity] = React.useState("");
   const [open, setOpen] = React.useState(false);
@@ -85,7 +92,7 @@ const Navbar = () => {
   const classes = useStyles();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [state, setState] = React.useState(false);
-  const [auth, setAuth] = React.useState(false);
+  const [authUser, setAuthUser] = React.useState(false);
   const [action, setAction] = React.useState(false);
   const isAuth = useSelector((state) => state.app.isAuth);
   
@@ -101,7 +108,7 @@ const Navbar = () => {
     setCityName(name);
   };
 
-  const dispatch = useDispatch();
+  
   React.useEffect(() => {
     dispatch(cityRequest(cityName));
   }, [cityName]);
@@ -114,25 +121,37 @@ const Navbar = () => {
     setAction(true);
     setState(false);
   };
-  const handleCloseLogin = (number) => {
-    if (+number === 8125303614) {
-      setAuth(true);
-      alert("Successfully Logged in");
-    } else if (+number === 8125303614) {
-      setAuth(true);
-      alert("Successfully Logged in");
-    } else if (+number === "") {
-      alert("Please type your number");
-      handleCloseLogin(number);
-    } else {
-      alert("You are not registered");
+  const handleCloseLogin = async (values) => {
+    // if (+number === 8125303614) {
+    //   setAuth(true);
+    //   alert("Successfully Logged in");
+    // } else if (+number === 8125303614) {
+    //   setAuth(true);
+    //   alert("Successfully Logged in");
+    // } else if (+number === "") {
+    //   alert("Please type your number");
+    //   handleCloseLogin(number);
+    // } else {
+    //   alert("You are not registered");
+    // }
+    console.log("email: ", values.email)
+    console.group("password: ", values.password)
+    try{
+        const userCredential = await signInWithEmailAndPassword(auth, values.email, values.password)
+        const user = userCredential.user;
+        console.log(user);
+        setAuthUser(true)
+    }catch(err){
+      console.log("Err: ", err)
     }
+    console.log("called handle close login: ", values.email, values.password)
     setAction(false);
     setState(false);
   };
+
   React.useEffect(() => {
-    dispatch(storeAuth(auth));
-  }, [auth]);
+    dispatch(storeAuth(authUser));
+  }, [authUser]);
 
   console.log(isAuth);
   return (
@@ -167,10 +186,10 @@ const Navbar = () => {
           {!isAuth && (
             <button onClick={handleSignIn} className={styles.signBtn}>
                 <p>Sign In</p>
-              
             </button>
           )}
           <Login action={action} handleCloseLogin={handleCloseLogin} />
+          
           <div
             onClick={toggleDrawer(true)}
             onClose={toggleDrawer(false)}
